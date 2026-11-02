@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f4f0e7">
+<meta name="description" content="Одно письмо, один год и целая жизнь впереди.">
+<title>Письмо тебе</title>
+<link rel="preload" as="image" href="10.webp">
+<style>
+:root{--paper:#f4f0e7;--ink:#303d34;--accent:#637957}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif}
+body:before{content:'';position:fixed;inset:0;pointer-events:none;opacity:.2;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath fill='%23736b55' opacity='.2' filter='url(%23n)' d='M0 0h180v180H0z'/%3E%3C/svg%3E")}
+.letter-wrap{max-width:740px;margin:0 auto;padding:64px 40px 50px}
+.letter{font-size:20px;line-height:1.83;text-align:justify}
+.letter p{margin:0 0 28px}
+.letter p:first-child,.letter p:last-child{font-size:28px;line-height:1.55;margin-bottom:34px}
+.memory{font:inherit;color:inherit;display:inline;padding:0;border:0;border-radius:0;background:linear-gradient(transparent calc(100% - 1px),#839372 1px);cursor:pointer;text-align:inherit;box-decoration-break:clone;-webkit-box-decoration-break:clone;transition:color .2s,background .2s}
+.memory:hover,.memory[aria-expanded=true]{color:#526b42;background:linear-gradient(transparent 65%,#dbe1cc 65%)}
+.memory:focus-visible,.close:focus-visible{outline:2px solid var(--accent);outline-offset:5px}
+#memory-card{position:fixed;z-index:10;margin:0;padding:10px 10px 40px;background:#fffcf7;box-shadow:0 12px 60px #1d2a3238;width:min(360px,calc(100vw - 32px));opacity:0;visibility:hidden;transform:translateY(8px) rotate(-2deg);transition:opacity .18s,transform .18s,visibility .18s;pointer-events:none}
+#memory-card.open{opacity:1;visibility:visible;transform:translateY(0) rotate(-2deg);pointer-events:auto}
+#memory-card img{width:100%;max-height:370px;object-fit:contain;display:block;background:#e9e6dc}
+.close{position:absolute;right:16px;top:16px;border:0;background:#fffcf7ed;border-radius:50%;width:30px;height:30px;color:var(--ink);cursor:pointer;font:23px Arial,sans-serif}
+.shade{display:none}
+@media(max-width:800px){.letter{font-size:19px}}
+@media(max-width:560px){
+ .letter-wrap{padding:32px 25px 24px}
+ .letter{font-size:18px;line-height:1.85}
+ .letter p:first-child,.letter p:last-child{font-size:24px}
+ #memory-card{left:50%!important;top:50%!important;width:min(380px,calc(100vw - 38px));transform:translate(-50%,-47%) rotate(-2deg)}
+ #memory-card.open{transform:translate(-50%,-50%) rotate(-2deg)}
+ #memory-card img{max-height:65vh}
+ .shade.open{display:block;position:fixed;inset:0;background:#242d274d;backdrop-filter:blur(3px);z-index:9}
+}
+@media(prefers-reduced-motion:reduce){*,*:before{transition:none!important}}
+</style>
+</head>
+<body>
+<main class="letter-wrap"><article id="letter" class="letter" aria-label="Письмо любимой"><p>Здравствуй, моя любовь, мой котёночек. Я бы хотел напомнить тебе, как сильно люблю тебя, ценю и обожаю.</p>
+<p>Год прошёл очень быстро - так, вероятно, ощущается всё хорошее и радостное. Но год - мелочь в сравнении с жизнями, которые мы проживём вместе, из жизни в жизнь встречая знакомые и родные глаза.</p>
+<p>Я благодарен тебе за то, что могу столько чувствовать. Ты моё счастье, мой дом и моя душа.</p>
+<p>С самого начала общения было ощущение того, что с тобой комфортно и спокойно. Было ощущение, будто мы знакомы.</p>
+<p>Я помню, какой трепет чувствовал к тебе, <button class="memory" data-memory="02" aria-haspopup="dialog" aria-controls="memory-card" aria-expanded="false">когда ходил за тобой на круизе с пледом</button>, чтобы ты не заболела. Помню, как легко пришла в голову <button class="memory" data-memory="01" aria-haspopup="dialog" aria-controls="memory-card" aria-expanded="false">аналогия твоего безумно красивого имени с казахским «шекер»</button>. Помню диалоги у общаги. Как минимум - желание запомнить каждое слово, словно это самое важное, что я слышал в жизни. Теперь уверенно могу сказать, что <button class="memory" data-memory="03" aria-haspopup="dialog" aria-controls="memory-card" aria-expanded="false">голуби охуели</button>.</p>
+<p>Как было мило и трепетно, когда ты пришла поддержать меня перед допсой <button class="memory" data-memory="04" aria-haspopup="dialog" aria-controls="memory-card" aria-expanded="false">с булочкой и браслетом, который сделала для меня своими руками</button>. Был уверен и продолжаю сохранять уверенность в том, что он приносит удачу.</p>
+<p>Какие были чудесные душевные перекуры между парами или вместо них и как с тобой значительно лучше переживалась осень. Как ты рассказала о своей вере в то, что душе даётся больше одной жизни и в каких-то из них далеко не факт, что ты переродишься человеком, - <button class="memory" data-memory="05" aria-haspopup="dialog" aria-controls="memory-card" aria-expanded="false">можешь, например, уткой</button>. Теперь я готов искать в следующей жизни чёрную утку-нитакусю с твоими глазками.</p>
+<p>Хочется запомнить и пронести через всю жизнь бесконечное желание разговаривать с тобой, потому что интересно. Как и огромное нежелание расставаться хотя бы на минутку. Как в желании провести вместе время <button class="memory" data-memory="12" aria-haspopup="dialog" aria-controls="memory-card" aria-expanded="false">мы пили кофе с утра между моей и твоей сменами</button>. Как хотелось гулять всю ночь с Ларисы на Горьковской и обниматься от переполняющего трепета. <button class="memory" data-memory="13" aria-haspopup="dialog" aria-controls="memory-card" aria-expanded="false">Никакая бабка со скрипкой не заставит меня исчезнуть</button>.</p>
+<p>Каждый раз, просыпаясь с тобой под «Good News», хочется улыбаться и сразу напоминать тебе, как сильно я люблю тебя. <button class="memory" data-memory="07" aria-haspopup="dialog" aria-controls="memory-card" aria-expanded="false">Я люблю этот период и чувствую ту же влюблённость до сих пор</button>. Все завтраки на Графской, когда ты, сидя на этом крутящемся стуле, вытягивала на меня ножки, пока мы фоном смотрели «Демонов Да Винчи» или «Сверхъестественное». Как перед Новым годом <button class="memory" data-memory="06" aria-haspopup="dialog" aria-controls="memory-card" aria-expanded="false">мы делали гирлянды на штору из бумажных звезд</button>.</p>
+<p><button class="memory" data-memory="08" aria-haspopup="dialog" aria-controls="memory-card" aria-expanded="false">Поездка в Выборг - наше первое мини-путешествие</button>. Несмотря на ужасный холод, было тепло. Хочется вернуться с тобой туда на подольше, прогуливаться, болтать, посмотреть на демоверсию старости.</p>
+<p>Зима была такой холодной, что мы смогли погулять по замёрзшей Фонтанке, но с тобой любой день казался солнечнее и теплее, чем являлся на деле. Как говорится, этой зимой никто не замерз.</p>
+<p>После вашей поездки в Казахстан мы классно провели весну. <button class="memory" data-memory="11" aria-haspopup="dialog" aria-controls="memory-card" aria-expanded="false">Съездили в Павловск</button>, гуляли, напитывались солнцем. К сожалению, потом пушистику нужно было улететь в Казахстан, но на момент этого письма остаётся совсем немного дней до того, как мы будем полноценно рядышком, жить жизнь.</p>
+<p>Зато в какой-то степени благодаря этому периоду <button class="memory" data-memory="09" aria-haspopup="dialog" aria-controls="memory-card" aria-expanded="false">мы посетили Грузию</button>, я побывал в Шымкенте и познакомился с твоей семьёй. Как радостно было снова иметь возможность касаться тебя. Я знаю, что впереди нас ждёт ещё множество счастливых дней, поездок и путешествий, но в эти девять дней я, вероятно, был счастливее, чем когда-либо в жизни. Хочу возвращаться из раза в раз в день, когда <button class="memory" data-memory="10" aria-haspopup="dialog" aria-controls="memory-card" aria-expanded="false">мы сидим на веранде, слушаем музыку, у тебя на коленях Муся, и у нас обоих глаза на мокром месте от того, что эмоции переполняют</button>. Хочу ещё не раз бегать под дождём с тобой и поцеловать тебя в каждом уголке мира.</p>
+<p>Вот такой год выдался, друзья. Спасибо тебе за него, спасибо тебе за тебя и за возможность и желание столько чувствовать к тебе. Ты чудо чудное и диво дивное. Мой десерт на ножках.</p>
+<p>До скорых трепетных встреч, солнышко. Бесконечно люблю тебя.</p></article></main>
+<div class="shade" id="shade"></div>
+<figure id="memory-card" role="dialog" aria-modal="false" aria-label="Наше воспоминание" aria-hidden="true"><img id="memory-image" alt=""><button class="close" aria-label="Закрыть воспоминание" type="button">×</button></figure>
+<script>
+const captions={"01": "Твоё имя — шекер", "02": "Плед, палуба и ты", "03": "Диалоги у общаги", "04": "Талисман на удачу", "05": "Из жизни в жизнь", "06": "Бумажные звёзды", "07": "Наше доброе утро", "08": "В холодном Выборге тепло", "09": "Поцеловать тебя в каждом уголке мира", "10": "Девять счастливых дней", "11": "Весна в Павловске", "12": "Кофе между сменами", "13": "Ещё немного побыть рядом"};
+const card=document.getElementById('memory-card'), image=document.getElementById('memory-image'), shade=document.getElementById('shade'), closeButton=card.querySelector('.close');
+const small=matchMedia('(max-width:560px)'), touch=matchMedia('(hover:none)');
+let current=null, timer, pinned=false, restoringFocus=false;
+function position(){if(!current||small.matches)return; const r=current.getBoundingClientRect(), w=card.offsetWidth, h=card.offsetHeight, gap=18;let x=r.right+gap,y=r.top-50;if(x+w>innerWidth-16){x=r.left-w-gap;if(x<16){x=Math.max(16,Math.min(r.left,innerWidth-w-16));y=r.bottom+gap;if(y+h>innerHeight-16)y=r.top-h-gap;}} card.style.left=Math.max(16,Math.min(x,innerWidth-w-16))+'px';card.style.top=Math.max(16,Math.min(y,innerHeight-h-16))+'px';}
+function show(button,pin=false){clearTimeout(timer);if(current&&current!==button)current.setAttribute('aria-expanded','false');current=button;pinned=pin;const n=button.dataset.memory;image.src=''+n+'.webp';image.alt=captions[n];button.setAttribute('aria-expanded','true');card.classList.add('open');card.setAttribute('aria-hidden','false');card.setAttribute('aria-modal',String(small.matches));shade.classList.toggle('open',small.matches);position();if(small.matches){closeButton.focus({preventScroll:true});}}
+function hide(restore=false){clearTimeout(timer);const previous=current;current=null;pinned=false;card.classList.remove('open');shade.classList.remove('open');card.setAttribute('aria-hidden','true');if(previous){previous.setAttribute('aria-expanded','false');if(restore){restoringFocus=true;previous.focus({preventScroll:true});restoringFocus=false;}}}
+function delayedHide(){if(!pinned)timer=setTimeout(()=>hide(),180);}
+image.addEventListener('load',position);
+document.querySelectorAll('.memory').forEach(button=>{button.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'&&!small.matches&&!pinned)show(button);});button.addEventListener('pointerleave',delayedHide);button.addEventListener('click',()=>{if(current===button&&pinned)hide();else show(button,true);});button.addEventListener('focus',()=>{if(!touch.matches&&!small.matches&&!pinned&&!restoringFocus)show(button);});button.addEventListener('blur',()=>{if(!pinned)delayedHide();});});
+card.addEventListener('pointerenter',()=>clearTimeout(timer));card.addEventListener('pointerleave',delayedHide);closeButton.addEventListener('click',()=>hide(true));shade.addEventListener('click',()=>hide(true));document.addEventListener('keydown',e=>{if(e.key==='Escape')hide(true);if(e.key==='Tab'&&current&&small.matches){e.preventDefault();closeButton.focus();}});document.addEventListener('click',e=>{if(current&&!card.contains(e.target)&&!e.target.closest('.memory'))hide();});window.addEventListener('resize',position);window.addEventListener('scroll',()=>{if(current){if(pinned)position();else hide();}},{passive:true});
+let loaded=false;function preload(){if(loaded)return;loaded=true;Object.keys(captions).forEach(n=>{const img=new Image();img.src=''+n+'.webp';});}if('requestIdleCallback'in window)requestIdleCallback(preload,{timeout:2500});else setTimeout(preload,2000);
+</script>
+</body>
+</html>
